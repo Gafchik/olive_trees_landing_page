@@ -33,7 +33,28 @@ export default {
                   align-center
                   justify-center
         >
-          <v-flex xs12 sm4 md4 class="my-1">
+<!--          <v-flex xs12 sm3 md3>-->
+<!--            <div class="full-width-container text-center align-center justify-center">-->
+<!--              <v-img :src="require('@/assets/images/olive_trees/favicon.png')"-->
+<!--                     height="50"-->
+<!--                     contain/>-->
+<!--              <strong class="footer_header centered-span">Olive Trees</strong>-->
+<!--            </div>-->
+<!--          </v-flex>-->
+              <v-flex xs12 sm3 md3>
+                <div class="full-width-container text-center align-center justify-center">
+                  <span>
+                    <v-img :src="require('@/assets/images/olive_trees/favicon.png')"
+                           height="50"
+                           contain/>
+                    <strong class="footer_header">Olive Trees</strong>
+                  </span>
+                </div>
+              </v-flex>
+
+
+
+          <v-flex xs12 sm3 md3>
             <div class="full-width-container text-center">
               <strong class="footer_header centered-span">{{$t('app.footer.email')}}</strong>
               <div>
@@ -41,7 +62,7 @@ export default {
               </div>
             </div>
           </v-flex>
-          <v-flex xs12 sm4 md4>
+          <v-flex xs12 sm3 md3>
             <div class="full-width-container text-center">
               <strong class="footer_header centered-span">{{$t('app.footer.contacts')}}</strong>
               <div>
@@ -52,7 +73,7 @@ export default {
             </div>
 
           </v-flex>
-          <v-flex xs12 sm4 md4>
+          <v-flex xs12 sm3 md3>
             <div class="full-width-container text-center">
               <strong class="footer_header centered-span">{{$t('app.footer.social_network')}}</strong>
               <div>

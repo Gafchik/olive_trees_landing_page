@@ -18,7 +18,7 @@ export default {
         <v-flex xs12 sm6 md6>
           <div>
             <a
-                href="https://play.google.com/store/apps/details?id=your_app_package_name"
+                href="https://play.google.com/store/apps/details?id=com.crustbrns.biodeposit_mobile"
                 target="_blank"
             >
               <v-img :src="require('@/assets/images/google/google-play-badge.png')"
@@ -32,7 +32,7 @@ export default {
         <v-flex xs12 sm6 md6 class="justify-center align-center">
           <div>
             <a
-                href="https://apps.apple.com/app/your-app-id"
+                href="https://apps.apple.com/ua/app/olivetrees/id6449684717"
                 target="_blank"
             >
               <v-img :src="require('@/assets/images/appstore/appstore-icon.png')"
