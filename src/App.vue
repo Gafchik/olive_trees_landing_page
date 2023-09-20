@@ -11,7 +11,26 @@ export default {
 <template>
   <div id="app">
     <my-header/>
-    <router-view/>
+    <router-view class="bg"/>
     <my-footer/>
   </div>
 </template>
+<style>
+.bg {
+  background-image: url('@/assets/images/olive_trees/adaptive-icon.png');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  height: 100%;
+}
+.full-width-container {
+  width: 100%; /* Занимает всю ширину экрана */
+  text-align: center; /* Центрирует содержимое по горизонтали */
+}
+
+.centered-span {
+  display: inline-block; /* Делает элемент блочным, чтобы можно было применить вертикальное выравнивание */
+  vertical-align: middle; /* Центрирует элемент по вертикали */
+}
+</style>

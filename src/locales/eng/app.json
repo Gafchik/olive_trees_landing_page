@@ -4,5 +4,12 @@
         "eng": "English",
         "geo": "Georgian",
         "rus": "Russian"
+    },
+    "footer": {
+        "email": "Email",
+        "location": "Location",
+        "contacts": "Contacts",
+        "social_network": "Social Networks",
+        "location_desc": "Trees - The Heart of Georgia, in Kakheti"
     }
 }

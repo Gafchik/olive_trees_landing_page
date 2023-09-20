@@ -42,7 +42,11 @@ export default {
 <template>
   <div data-app>
     <v-app-bar class="bar-app" dark>
-      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-toolbar-title>
+          <v-img :src="require('@/assets/images/olive_trees/favicon.png')"
+                 height="60"
+                 contain/>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-menu
           left
