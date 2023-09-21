@@ -12,8 +12,8 @@ export default {
   <div id="app">
     <my-header/>
     <v-main>
-      <v-container fluid>
-        <router-view class="bg"/>
+      <v-container fluid class="bg">
+        <router-view />
       </v-container>
     </v-main>
     <my-footer/>
@@ -21,12 +21,13 @@ export default {
 </template>
 <style>
 .bg {
-  background-image: url('@/assets/images/olive_trees/adaptive-icon.png');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('@/assets/images/olive_trees/adaptive-icon.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   height: 100%;
+  width: 100%;
 }
 
 .full-width-container {
@@ -40,11 +41,19 @@ export default {
 }
 
 .header_text {
-  font-size: 50pt
+  font-size: 30pt;
+  font-weight: bold;
 }
 .flex-container-center-str-tag {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Фиксированная высота для центрирования по вертикали */
+}
+
+.flex-container-align-center {
+  display: flex;
   align-items: center;
   height: 100%; /* Фиксированная высота для центрирования по вертикали */
 }

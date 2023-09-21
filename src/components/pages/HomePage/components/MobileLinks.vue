@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div>
-    <div class="full-width-container text-center">
+    <div class="flex-container-center-str-tag">
       <span class="centered-span header_text">
         {{$t('pages.HomePage.store_title')}}
       </span>
@@ -22,7 +22,7 @@ export default {
               target="_blank"
           >
             <v-img :src="require('@/assets/images/google/google-play-badge.png')"
-                   height="150"
+                   height="125"
                    contain
                    alt="Download on Google Play"/>
           </a>
@@ -36,7 +36,7 @@ export default {
               target="_blank"
           >
             <v-img :src="require('@/assets/images/appstore/appstore-icon.png')"
-                   height="150"
+                   height="125"
                    contain
                    alt="Download on the App Store"/>
           </a>
