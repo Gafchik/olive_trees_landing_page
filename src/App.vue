@@ -41,7 +41,7 @@ export default {
 }
 
 .header_text {
-  font-size: 30pt;
+  font-size: 20pt;
   font-weight: bold;
 }
 .flex-container-center-str-tag {

@@ -33,14 +33,6 @@ export default {
                   align-center
                   justify-center
         >
-<!--          <v-flex xs12 sm3 md3>-->
-<!--            <div class="full-width-container text-center align-center justify-center">-->
-<!--              <v-img :src="require('@/assets/images/olive_trees/favicon.png')"-->
-<!--                     height="50"-->
-<!--                     contain/>-->
-<!--              <strong class="footer_header centered-span">Olive Trees</strong>-->
-<!--            </div>-->
-<!--          </v-flex>-->
               <v-flex xs12 sm3 md3>
                 <div class="full-width-container text-center align-center justify-center">
                   <span>

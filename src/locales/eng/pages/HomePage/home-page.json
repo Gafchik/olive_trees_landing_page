@@ -1,4 +1,10 @@
 {
     "store_title": "Our application on different platforms",
-    "tree_picker_title": "Purchasing Certificates"
+    "tree_picker_title": "Purchasing Certificates",
+    "already_count_trees": "Select ready number of certificates",
+    "promo_code": "Promo code",
+    "buy_count": "Buy {count} ",
+    "buy_1": "certificate",
+    "buy_5": "certificate",
+    "buy_many": "certificates"
 }
