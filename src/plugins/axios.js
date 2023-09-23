@@ -16,6 +16,7 @@ instance.interceptors.request.use((config) => {
 });
 instance.interceptors.response.use(
     (response) => {
+        // Закрыть индикатор загрузки перед отправкой запроса
         Swal.close();
         return response;
     },

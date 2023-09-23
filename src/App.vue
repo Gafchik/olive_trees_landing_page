@@ -13,13 +13,16 @@ export default {
     <my-header/>
     <v-main>
       <v-container fluid class="bg">
-        <router-view />
+        <router-view/>
       </v-container>
     </v-main>
     <my-footer/>
   </div>
 </template>
 <style>
+.mb-4 {
+  margin-bottom: 3%;
+}
 .bg {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('@/assets/images/olive_trees/adaptive-icon.png');
   background-size: cover;
@@ -44,6 +47,7 @@ export default {
   font-size: 20pt;
   font-weight: bold;
 }
+
 .flex-container-center-str-tag {
   display: flex;
   justify-content: center;
@@ -56,5 +60,14 @@ export default {
   display: flex;
   align-items: center;
   height: 100%; /* Фиксированная высота для центрирования по вертикали */
+}
+.brown-text {
+  @import '@/css/fonts/hack.css';
+  font-family: 'hack', sans-serif;
+  color: #413e1e
+}
+span {
+  @import '@/css/fonts/hack.css';
+  font-family: 'hack', sans-serif;
 }
 </style>

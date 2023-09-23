@@ -6,8 +6,8 @@ export default {
 
 <template>
   <div>
-    <div class="flex-container-center-str-tag">
-      <span class="centered-span header_text">
+    <div class="flex-container-center-str-tag mb-4">
+      <span class="centered-span header_text brown-text">
         {{$t('pages.HomePage.store_title')}}
       </span>
     </div>
@@ -15,7 +15,7 @@ export default {
               align-center
               justify-center
     >
-      <v-flex xs12 sm6 md6>
+      <v-flex xs12 sm6 md6 >
         <div>
           <a
               href="https://play.google.com/store/apps/details?id=com.crustbrns.biodeposit_mobile"

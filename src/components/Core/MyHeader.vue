@@ -3,11 +3,11 @@ import {mapActions, mapGetters} from "vuex";
 
 export default {
   name: "MyHeader",
-  computed:{
+  computed: {
     ...mapGetters('app', {
       getLocale: 'getLocale',
     }),
-    getLocaleArray(){
+    getLocaleArray() {
       return [
         {
           name: this.$t('app.locale.rus'),
@@ -28,7 +28,7 @@ export default {
       ]
     }
   },
-  methods:{
+  methods: {
     ...mapActions('app', {
       setLocale: 'setLocale',
     }),
@@ -42,11 +42,14 @@ export default {
 <template>
   <div data-app>
     <v-app-bar class="bar-app" dark>
-      <v-toolbar-title>
-          <v-img :src="require('@/assets/images/olive_trees/favicon.png')"
-                 height="60"
-                 contain/>
-      </v-toolbar-title>
+
+          <span class="image-text-container">
+            <v-img :src="require('@/assets/images/olive_trees/favicon.png')"
+                   height="50"
+                   contain/>
+            <span>Olive Trees</span>
+          </span>
+
       <v-spacer></v-spacer>
       <v-menu
           left
@@ -76,7 +79,17 @@ export default {
 
 <style scoped>
 .bar-app {
-  background: black!important;
-  //opacity: 0.7;
+  background: black !important;
+//opacity: 0.7;
+}
+.image-text-container {
+  display: flex; /* Размещаем элементы внутри контейнера в одной строке */
+  align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+.image-text-container span {
+  font-size: 16pt;
+  margin-left: 6%;
+  white-space: nowrap;
 }
 </style>

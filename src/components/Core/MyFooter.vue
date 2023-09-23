@@ -27,37 +27,25 @@ export default {
         class="flex"
         flat
         tile
+        style="margin-top: 1%"
     >
-      <v-card-text>
+      <v-card-text class="mt-4">
         <v-layout row wrap
                   align-center
                   justify-center
         >
-              <v-flex xs12 sm3 md3>
-                <div class="full-width-container text-center align-center justify-center">
-                  <span>
-                    <v-img :src="require('@/assets/images/olive_trees/favicon.png')"
-                           height="50"
-                           contain/>
-                    <strong class="footer_header">Olive Trees</strong>
-                  </span>
-                </div>
-              </v-flex>
-
-
-
-          <v-flex xs12 sm3 md3>
+          <v-flex xs12 sm4 md4>
             <div class="full-width-container text-center">
-              <strong class="footer_header centered-span">{{$t('app.footer.email')}}</strong>
-              <div>
+              <strong class="footer_header centered-span mb-4">{{$t('app.footer.email')}}</strong>
+              <div class="mb-4">
                 <span>olivetreesclub@gmail.com</span>
               </div>
             </div>
           </v-flex>
-          <v-flex xs12 sm3 md3>
+          <v-flex xs12 sm4 md4>
             <div class="full-width-container text-center">
-              <strong class="footer_header centered-span">{{$t('app.footer.contacts')}}</strong>
-              <div>
+              <span class="footer_header centered-span mb-4">{{$t('app.footer.contacts')}}</span>
+              <div class="mb-4">
                 <span>+380635946256</span>
                 <br/>
                 <span>+995599427509</span>
@@ -65,19 +53,19 @@ export default {
             </div>
 
           </v-flex>
-          <v-flex xs12 sm3 md3>
+          <v-flex xs12 sm4 md4>
             <div class="full-width-container text-center">
-              <strong class="footer_header centered-span">{{$t('app.footer.social_network')}}</strong>
-              <div>
+              <span class="footer_header centered-span mb-4">{{$t('app.footer.social_network')}}</span>
+              <div class="mb-4">
                 <v-btn
                     v-for="icon in icons"
                     :key="icon.icon"
                     :href="icon.link"
                     target="_blank"
                     icon
-                    class="mx-4"
+                    class="icon-margin"
                 >
-                  <v-icon size="35">
+                  <v-icon size="30">
                     {{ icon.icon }}
                   </v-icon>
                 </v-btn>
@@ -93,6 +81,10 @@ export default {
 <style scoped>
 .footer_header {
   font-size: 20pt;
+}
+.icon-margin {
+  margin-left: 2%;
+  margin-right: 2%;
 }
 </style>
 

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'hack';
+    src: url('@/assets/fonts/Hack/Hack-Bold.ttf') format('hack-bold'),
+    url('@/assets/fonts/Hack/Hack-BoldItalic.ttf') format('hack-bold-italic');
+    url('@/assets/fonts/Hack/Hack-Italic.ttf') format('hack-italic');
+    url('@/assets/fonts/Hack/Hack-Regular.ttf') format('hack-regular');
+}
