@@ -1,4 +1,6 @@
 <script>
+import {mapActions, mapMutations} from "vuex";
+
 const MIN_COUNT_TREE = 2
 const ALREADY_COUNT_TREE_ARRAY = [1, 5, 10, 25, 50];
 export default {
@@ -9,20 +11,25 @@ export default {
       ALREADY_COUNT_TREE_ARRAY,
       count_trees: 1,
       promo: '',
-      uuid: null,
+      uuid: '',
     }
   },
   mounted() {
     if(!Object.keys(this.$route.params).length){
       this.$router.push({ path: 'PageNotFound'});
-
     }
-
+    this.setUuid(this.$route.params.uuid)
     this.uuid = this.$route.params.uuid;
     this.promo = this.$route.query.promo ?? '';
     this.count_trees = this.$route.query.count_trees ?? '';
   },
   methods: {
+    ...mapMutations('homePage',{
+      setUuid: 'setUuid'
+    }),
+    ...mapActions('homePage',{
+      buyTreesMono: 'buyTreesMono'
+    }),
     changeTree(isAdd) {
       isAdd ? this.count_trees++ : this.count_trees--
     },
@@ -30,7 +37,15 @@ export default {
       this.count_trees = count
     },
     buy() {
-      alert('Пошел нахуй, Не готово !)')
+      let payload = {count_trees: this.count_trees,}
+      if(this.promo.length > 0){
+        payload.promo_code = this.promo
+      }
+      this.buyTreesMono(payload).then((response) => {
+        if(response.result){
+          window.location.href = response.pageUrl
+        }
+      })
     }
   }
 }

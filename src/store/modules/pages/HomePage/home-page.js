@@ -1,32 +1,49 @@
-// import axios from '@/modules/axios_module';
-// import config from 'vue.config';
+import axios from '@/plugins/axios';
+import shared from '@/store/shared'
+// import Swal from "sweetalert2";
 
-
+const URL_BUY_TREES_MONO = '/api/services/buy-young-olive-trees'
 
 const state = {
-    // typesTask: [],
+    uuid: ''
 };
 
 const getters = {
-    // typesTask: state => {
-    //     return state.typesTask
-    // },
+    uuid: state => {
+        return state.uuid
+    },
 };
 
 const mutations = {
-    // setTypesTask: (state, payload) => {
-    //     state.typesTask = payload;
-    // },
+    setUuid: (state, payload) => {
+        state.uuid = payload;
+    },
+    setTest: (state, payload) => {
+       payload
+    },
 };
 
 const actions = {
-    // saveNewCheckListAsync: async ({commit}, payload) => {
-    //     return await axios.post(URL_SAVE_NEW_CHECK_LIST, payload)
-    //         .then(({data}) => {
-    //             return data;
-    //         })
-    // },
-
+    // buyTreesMono: async ({commit}, payload) => {
+    buyTreesMono: async ({commit}, payload) => {
+        let headers = {
+            'X-Lang-Header': shared.state.locale,
+            'Authorization': state.uuid
+        }
+        return await axios.post(URL_BUY_TREES_MONO, payload,{headers:headers})
+            .then(({data}) => {
+                commit('setTest',data.data)
+                return {
+                    result: true,
+                    pageUrl: data.data.pageUrl
+                }
+            })
+            .catch(() => {
+                return {
+                    result: false,
+                }
+            })
+    },
 };
 
 export default {
