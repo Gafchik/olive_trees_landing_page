@@ -16,7 +16,7 @@ instance.interceptors.request.use((config) => {
 });
 instance.interceptors.response.use(
     (response) => {
-        Swal.hideLoading()
+        Swal.close();
         return response;
     },
     (error) => {
