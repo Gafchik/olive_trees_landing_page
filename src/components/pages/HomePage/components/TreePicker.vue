@@ -22,7 +22,9 @@ export default {
     this.setUuid(this.$route.params.uuid)
     this.uuid = this.$route.params.uuid;
     this.promo = this.$route.query.promo ?? '';
-    this.count_trees = parseInt(this.$route.query.count_trees) ?? 1;
+    this.count_trees = this.$route.query.count_trees.length > 0
+        ? parseInt(this.$route.query.count_trees)
+        : 1;
   },
   methods: {
     ...mapMutations('homePage', {
