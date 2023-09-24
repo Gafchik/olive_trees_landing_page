@@ -1,6 +1,6 @@
 import axios from '@/plugins/axios';
 import shared from '@/store/shared'
-// import Swal from "sweetalert2";
+
 
 const URL_BUY_TREES_MONO = '/api/services/buy-young-olive-trees'
 
@@ -24,7 +24,6 @@ const mutations = {
 };
 
 const actions = {
-    // buyTreesMono: async ({commit}, payload) => {
     buyTreesMono: async ({commit}, payload) => {
         let headers = {
             'X-Lang-Header': shared.state.locale,

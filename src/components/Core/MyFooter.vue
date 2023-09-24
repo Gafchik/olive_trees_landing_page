@@ -1,10 +1,25 @@
 <script>
+import {mapActions, mapGetters} from "vuex";
+
 export default {
   name: "MyFooter",
   data(){
     return {
 
     }
+  },
+  mounted() {
+    this.getContactsAsync()
+  },
+  computed: {
+    ...mapGetters('app',{
+      contacts: 'contacts',
+    })
+  },
+  methods: {
+    ...mapActions('app',{
+      getContactsAsync: 'getContactsAsync',
+    })
   },
 }
 </script>
@@ -29,7 +44,9 @@ export default {
             <div class="full-width-container text-center">
               <strong class="footer_header centered-span mb-4">{{$t('app.footer.email')}}</strong>
               <div class="mb-4">
-                <span>olivetreesclub@gmail.com</span>
+                <template v-for="(email,key) in contacts.emails ?? []">
+                  <span v-bind:key="key+'email'">{{email}} <br/></span>
+                </template>
               </div>
             </div>
           </v-flex>
@@ -37,9 +54,9 @@ export default {
             <div class="full-width-container text-center">
               <span class="footer_header centered-span mb-4">{{$t('app.footer.contacts')}}</span>
               <div class="mb-4">
-                <span>+380635946256</span>
-                <br/>
-                <span>+995599427509</span>
+                <template v-for="(phone,key) in contacts.phones ?? []">
+                  <span v-bind:key="key+'phone'">{{phone}} <br/></span>
+                </template>
               </div>
             </div>
           </v-flex>
