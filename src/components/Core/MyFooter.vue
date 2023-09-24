@@ -3,16 +3,7 @@ export default {
   name: "MyFooter",
   data(){
     return {
-      icons: [
-        {
-          icon: 'mdi-instagram',
-          link: 'https://www.instagram.com/bio_cottege/'
-        },
-        {
-          icon: 'mdi-youtube',
-          link: 'https://www.youtube.com/@OliveFamilyClub'
-        },
-      ]
+
     }
   },
 }
@@ -34,7 +25,7 @@ export default {
                   align-center
                   justify-center
         >
-          <v-flex xs12 sm4 md4>
+          <v-flex xs12 sm6 md6>
             <div class="full-width-container text-center">
               <strong class="footer_header centered-span mb-4">{{$t('app.footer.email')}}</strong>
               <div class="mb-4">
@@ -42,33 +33,13 @@ export default {
               </div>
             </div>
           </v-flex>
-          <v-flex xs12 sm4 md4>
+          <v-flex xs12 sm6 md6>
             <div class="full-width-container text-center">
               <span class="footer_header centered-span mb-4">{{$t('app.footer.contacts')}}</span>
               <div class="mb-4">
                 <span>+380635946256</span>
                 <br/>
                 <span>+995599427509</span>
-              </div>
-            </div>
-
-          </v-flex>
-          <v-flex xs12 sm4 md4>
-            <div class="full-width-container text-center">
-              <span class="footer_header centered-span mb-4">{{$t('app.footer.social_network')}}</span>
-              <div class="mb-4">
-                <v-btn
-                    v-for="icon in icons"
-                    :key="icon.icon"
-                    :href="icon.link"
-                    target="_blank"
-                    icon
-                    class="icon-margin"
-                >
-                  <v-icon size="30">
-                    {{ icon.icon }}
-                  </v-icon>
-                </v-btn>
               </div>
             </div>
           </v-flex>
