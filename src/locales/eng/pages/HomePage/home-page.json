@@ -1,9 +1,55 @@
 {
-    "store_title": "Our application on different platforms",
-    "tree_picker_title": "Purchasing Certificates",
-    "already_count_trees": "Select ready number of certificates",
-    "promo_code": "Promo code",
-    "buy_1": "Buy {count} certificate",
-    "buy_5": "Buy {count} certificate",
-    "buy_many": "Buy {count} certificates"
+  "OurTarget": {
+    "title": "Our goal",
+    "text": "Preservation of the environment, which is undeniable in the modern world. Planting olive trees plays a significant ecological role in maintaining the natural balance. You make an important contribution to the greening of our planet by purchasing a certificate in the \"Olive Trees\" application."
+  },
+  "WithUsYouGet": {
+    "title": "With us you get",
+    "items": {
+      "opportunity": {
+        "title": "A unique opportunity",
+        "text": "Green the planet in one click! By buying an olive tree certificate, you reduce your carbon footprint."
+      },
+      "tourism": {
+        "title": "Eco-tourism",
+        "text": "Plantation visits are open to certificate holders. Every holder can participate in tree care."
+      },
+      "old_tree": {
+        "title": "Age tree",
+        "text": "Olive trees grow hundreds or even thousands, cleaning the environment from carbon dioxide. By buying a certificate, you perpetuate the memory of you in a tree."
+      },
+      "buy": {
+        "title": "Buying a certificate",
+        "text": "You have the opportunity to participate in eco-forums."
+      }
+    }
+  },
+  "AboutUs": {
+    "title": "About Us",
+    "texts": {
+      "a1": "By purchasing an olive tree certificate through the \"OliveTrees\" program, you get a unique opportunity to become involved in the preservation of the flora of our planet Earth!",
+      "a2": "After a successful purchase, you will receive an electronic certificate that contains all the information about the tree that was planted, including the year of planting, geodata and a unique code. This certificate will become a kind of \"ticket\" to your planted tree.",
+      "a3": "But that's not all! Each owner of an olive tree certificate will have the opportunity to come as an eco-tourist to the olive grove where his tree grows. Take part in the care of the trees. Take part in the harvest festival. grows over 1000 years.",
+      "a4": "By purchasing a certificate in the \"OliveTrees\" application, you are supporting the environment, because each olive tree produces oxygen for the breathing of 2 people on the planet. Be sure that your purchase will be of great importance to our company and the environment.",
+      "a5": "Join our community that is greening the planet now!"
+    },
+    "greenBorder": {
+      "a1":{
+        "title": "One Tree",
+        "text": "Oxygen for two people on the planet!"
+      },
+      "a2":{
+        "title": "Trees",
+        "text": "Hundreds of years grow!"
+      },
+      "a3":{
+        "title": "Evergreen Tree",
+        "text": "Olive photosynthesis does not stop all year round."
+      },
+      "a4":{
+        "title": "Monitoring",
+        "text": "Control the reduction of the carbon footprint in the application!"
+      }
+    }
+  }
 }

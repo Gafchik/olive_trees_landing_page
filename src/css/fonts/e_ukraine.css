@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'e-UkraineHead-Bold';
+    src: url('~@/assets/fonts/e-Ukraine/Head/e-UkraineHead-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead-UltraLight';
+    src: url('~@/assets/fonts/e-Ukraine/Head/e-UkraineHead-UltraLight.otf') format('opentype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead-Light';
+    src: url('~@/assets/fonts/e-Ukraine/Head/e-UkraineHead-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead-Logo';
+    src: url('~@/assets/fonts/e-Ukraine/Head/e-UkraineHead-LOGO.otf') format('opentype');
+    /* Укажите другие свойства шрифта, если необходимо */
+}
+
+@font-face {
+    font-family: 'e-UkraineHead-Medium';
+    src: url('~@/assets/fonts/e-Ukraine/Head/e-UkraineHead-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead-Regular';
+    src: url('~@/assets/fonts/e-Ukraine/Head/e-UkraineHead-Regular.otf') format('opentype');
+    /* Укажите другие свойства шрифта, если необходимо */
+}
+
+@font-face {
+    font-family: 'e-UkraineHead-Thin';
+    src: url('~@/assets/fonts/e-Ukraine/Head/e-UkraineHead-Thin.otf') format('opentype');
+    font-weight: 100;
+}

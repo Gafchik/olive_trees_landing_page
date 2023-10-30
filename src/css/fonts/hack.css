@@ -1,7 +1,27 @@
 @font-face {
-    font-family: 'hack';
-    src: url('@/assets/fonts/Hack/Hack-Bold.ttf') format('hack-bold'),
-    url('@/assets/fonts/Hack/Hack-BoldItalic.ttf') format('hack-bold-italic');
-    url('@/assets/fonts/Hack/Hack-Italic.ttf') format('hack-italic');
-    url('@/assets/fonts/Hack/Hack-Regular.ttf') format('hack-regular');
+    font-family: 'hack-bold';
+    src: url('~@/assets/fonts/Hack/Hack-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hack-bolditalic';
+    src: url('~@/assets/fonts/Hack/Hack-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'hack-italic';
+    src: url('~@/assets/fonts/Hack/Hack-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'hack-regular';
+    src: url('~@/assets/fonts/Hack/Hack-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

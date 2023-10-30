@@ -1,7 +1,7 @@
 import PageNotFound from "/src/components/pages/404/PageNotFound.vue";
 export default  [
     {
-        path: '/',
+        path: '*',
         component: PageNotFound,
         name: 'PageNotFound',
     }

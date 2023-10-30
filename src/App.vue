@@ -20,6 +20,7 @@ export default {
   </div>
 </template>
 <style>
+@import '@/css/fonts/hack.css';
 .mb-4 {
   margin-bottom: 3%;
 }
@@ -62,12 +63,10 @@ export default {
   height: 100%; /* Фиксированная высота для центрирования по вертикали */
 }
 .brown-text {
-  @import '@/css/fonts/hack.css';
-  font-family: 'hack', sans-serif;
+  font-family: 'hack-bold', sans-serif;
   color: #413e1e
 }
 span {
-  @import '@/css/fonts/hack.css';
-  font-family: 'hack', sans-serif;
+  font-family: 'hack-bold', sans-serif;
 }
 </style>
