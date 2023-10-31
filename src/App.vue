@@ -9,15 +9,18 @@ export default {
 }
 </script>
 <template>
-  <div id="app">
-    <my-header/>
-    <v-main>
-      <v-container fluid class="bg">
-        <router-view/>
-      </v-container>
-    </v-main>
-    <my-footer/>
-  </div>
+  <v-app>
+    <div id="app">
+      <my-header/>
+      <v-main>
+        <v-container fluid class="bg">
+          <router-view/>
+        </v-container>
+      </v-main>
+      <my-footer/>
+    </div>
+  </v-app>
+
 </template>
 <style>
 @import '@/css/fonts/hack.css';

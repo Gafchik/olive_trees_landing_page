@@ -1,6 +1,3 @@
-// import routeAxios from '@/configs/axios/axios-main-config';
-// import httpStatus from '@/configs/http-status';
-
 
 export default {
     config: {

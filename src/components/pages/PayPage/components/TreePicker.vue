@@ -88,7 +88,6 @@ export default {
                  :disabled="count_trees < MIN_COUNT_TREE"
                  fab
                  small
-                 color="grey"
                  @click="changeTree(false)"
           >
             <v-icon>mdi-minus</v-icon>
@@ -114,7 +113,6 @@ export default {
           <v-btn v-if="!!$vuetify.breakpoint.mdAndUp" style="background-color: #a3d64b; color: white"
                  fab
                  large
-                 color="grey"
                  @click="changeTree(true)"
           >
             <v-icon>mdi-plus</v-icon>
@@ -122,7 +120,6 @@ export default {
           <v-btn v-else style="background-color: #a3d64b; color: white"
                  fab
                  small
-                 color="grey"
                  @click="changeTree(true)"
           >
             <v-icon>mdi-plus</v-icon>
@@ -151,7 +148,6 @@ export default {
                 :key="value"
                 fab
                 large
-                color="grey"
                 @click="setReadyCountTree(value)"
 
             >
@@ -175,6 +171,7 @@ export default {
                 :label="$t('pages.PayPage.promo_code')"
                 v-model="promo"
                 filled
+                color="green"
             ></v-text-field>
           </div>
           <v-btn block @click="buy()" class="mb-4 custom-btn" rounded style="background-color: #a3d64b; color: white">
